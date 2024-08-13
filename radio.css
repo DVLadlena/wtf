@@ -1,0 +1,42 @@
+@import url('./main.css');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+input[type='radio'][id='night']:checked ~ .form_card {
+background-color: var(--dark-color);
+color: var(--dark-second-color);
+}
+
+input[type='radio'][id='day']:checked ~ .form_card {
+background-color: var(--light-color);
+color: var(--light-second-color);
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+.btn {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+}
+
+.btn:active {
+    font-size: 17px;
+    background-color:#FFE4C4;
+}
+    
+input {
+    border: none;
+    border-bottom: 1px solid black;
+}
+input[type='submit'] {
+    border-radius: 5px;
+    background-color: #FFE4C4;
+}
